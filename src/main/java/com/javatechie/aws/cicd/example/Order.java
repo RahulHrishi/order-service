@@ -4,7 +4,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @NoArgsConstructor
-@ToString
 public class Order {
 
     private int id;
@@ -41,6 +40,10 @@ public class Order {
 		this.name = name;
 		this.quantity = quantity;
 		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Order [id=" + id + ", name=" + name + ", quantity=" + quantity + ", price=" + price + "]";
 	}
 	
     
